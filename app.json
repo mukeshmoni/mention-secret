@@ -1,0 +1,31 @@
+{
+  "name": "TagAll",
+  "description": "A Telegram TagAll Bot",
+  "keywords": [
+    "telegram",
+    "open",
+    "source",
+    "tagall",
+    "tg",
+    "anie",
+    "mention",
+    "all"
+  ],
+  "env": {
+     "MONGO_DB_URL": {
+        "description": "ʀᴇǫᴜɪʀᴇᴅ ғᴏʀ ᴅᴀᴛᴀʙᴀsᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴs. cloud.mongodb.com /ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʟᴇᴀᴠᴇ ɪᴛ",
+        "required": false,
+        "value": "mongodb+srv://bsdk:betichod@cluster0.fgj1r9z.mongodb.net/?retryWrites=true&w=majority"
+     },,    
+    "TOKEN": {
+      "description": "ʙᴏᴛ ᴛᴏᴋᴇɴ ғʀᴏᴍ @botfather..",
+      "value": "BOT_TOKEN"
+    } 
+  },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          }
+      ],
+      "stack": "container"
+  }
