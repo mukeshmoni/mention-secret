@@ -7,11 +7,11 @@ from Abg import patch  # type : ignore
 from pyrogram import Client
 from pyrogram.enums import ParseMode
 
-from config import Config
+from config import config
 
 # Enable logging
 
-logging.basicConfig(
+logging.basicconfig(
     format="[%(asctime)s - %(levelname)s] - %(name)s - %(message)s",
     datefmt="%d-%b-%y %H:%M:%S",
     handlers=[logging.FileHandler("Tagslogs.txt"), logging.StreamHandler()],
@@ -20,7 +20,7 @@ logging.basicConfig(
 
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 LOGGER = logging.getLogger(__name__)
-OWNER_ID = Config.OWNER_ID
+OWNER_ID = config.OWNER_ID
 StartTime = time.time()
 
 
@@ -28,10 +28,10 @@ class Abishnoi(Client):
     def __init__(self):
         super().__init__(
             "Abishnoi",
-            api_id=Config.API_ID,
-            api_hash=Config.API_HASH,
+            api_id=config.API_ID,
+            api_hash=config.API_HASH,
             lang_code="en",
-            bot_token=Config.TOKEN,
+            bot_token=config.TOKEN,
             in_memory=True,
             parse_mode=ParseMode.DEFAULT,
         )
