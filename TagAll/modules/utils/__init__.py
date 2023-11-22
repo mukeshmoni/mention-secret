@@ -1,1 +1,1 @@
-PICS = "https://te.legra.ph//file/f8ba75bdbb9931cbc8229.jpg"
+PICS = "https://telegra.ph/file/5a659d5410352de036728.png"
